@@ -1,0 +1,21 @@
+version: '3'
+services:
+  streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=streamlit
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: streamlit
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root

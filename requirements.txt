@@ -1,0 +1,8 @@
+streamlit
+transformers
+pydub
+mysql-connector-python
+pytube
+moviepy
+pymysql
+ffmpeg
