@@ -1,0 +1,7 @@
+those instructions should be followed in order to excute the finetune_Darija_Local.py successfully
+ * Make sure your machine able to install python pacakges through pip
+ * Make sure you own the data in local folder and then you need to change the two varaibles:
+       train_Data_Path = "./8dretna_daridja/data/train-00000-of-00001.parquet"
+       test_Data_Path  = "./8dretna_daridja/data/validation-00000-of-00001.parquet"
+    to the right path into data
+    
